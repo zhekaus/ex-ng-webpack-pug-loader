@@ -1,0 +1,14 @@
+header
+    nav.navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse
+        button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarToggle', aria-controls='navbarToggle', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        a.navbar-brand(href='http://www.zipir.ru') zipir.ru
+        #navbarToggle.collapse.navbar-collapse
+            ul.navbar-nav.mr-auto
+                li.nav-item: a.nav-link([routerLink]=['/dashboard']) Home
+            span.navbar-text Where magic happens
+main
+    .container
+        router-outlet
+footer.fixed-bottom
+    p &copy; EngMe.ru 2013-2017
